@@ -2,7 +2,7 @@ import ChattingRoom from "./ChattingRoom";
 import "./ChattingComponant_style.css";
 import axios from "axios";
 import { useState } from "react";
-import ModalBasic from "./modal/ModalBasic";
+import Modal from "./modal/Modal";
 
 function ChattingComponant() {
   const[messageDatas, setMessageDatas] = useState([]);
@@ -59,7 +59,9 @@ function ChattingComponant() {
           clear conversation
         </div>
       </div>
-      {modalOpen ? <ModalBasic setModalOpen={setModalOpen} onClose = {ModalOncloseHandle}/> : null}
+      {modalOpen ? (
+        <Modal setModalOpen={setModalOpen} onClose={ModalOncloseHandle} />
+      ) : null}
     </div>
   );
 }

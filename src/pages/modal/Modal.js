@@ -1,9 +1,8 @@
 import "./Modal-style.css";
 
-function ModalBasic(props) {
+function Modal(props) {
 
   const { setModalOpen, onClose } = props;
-  // 모달 끄기
   function closeModal(e) {
     setModalOpen(false);
     onClose(e)
@@ -25,4 +24,4 @@ function ModalBasic(props) {
     </div>
   );
 }
-export default ModalBasic;
+export default Modal;
