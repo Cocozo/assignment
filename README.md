@@ -45,7 +45,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
  모든 로봇 채팅에 프로필 사진과 이름을 달고보니 메세지 창이 전반적으로 깔끔해 보이지 않고 어수선하여 메세지의 내용을 보는데 방해가 되었습니다. 따라서 만약 로봇에서 연속적으로 메세지가 오는경우에, 로봇프로필과 이름은 상위 메세지 버블에만 노출될 수 있도록 구현 하였습니다.
 
-### 추가기능3 : 메신저 상태가 바뀔  받았을시 스크롤 맨 아래로 내리기.
+### 추가기능3 : 메신저 상태가 바뀔시 스크롤 맨 아래로 내리기.
 
  ![image](./readme_files/scroll_down.gif)
 
