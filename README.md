@@ -16,7 +16,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 'clear convasation' 클릭시
  ![image](./readme_files/modal_screen.png)
-
+ ![image](./readme_files/clear_conversation.gif)
+ 
  
 ## 구현 현황
 
