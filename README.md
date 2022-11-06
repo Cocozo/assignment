@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## 실행법
 
 기본적으로 create-react-app를 사용하여 프로젝트를 구성하였습니다.  
-터미널에서 해당 레포지토리를 연 뒤, 'npm install react-script'를 이용하여 스크립트를 설치해 주세요.  
+터미널에서 해당 레포지토리를 연 뒤, `npm install react-script`를 이용하여 스크립트를 설치해 주세요.  
 그 다음 `npm start` 를 입력하시면 로컬 호스트서버가 열리고, 브라우저에서 [http://localhost:3000](http://localhost:3000)를 여시면 제작한 프로젝트를 보실 수 있습니다.
 
 ## 실행화면
