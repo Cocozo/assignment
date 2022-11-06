@@ -101,6 +101,10 @@
     height: 90%;
 }
 
+.chatting-room::-webkit-scrollbar {
+    display: none;
+}
+
 .footer {
     height: 30px;
     width: 100%;
