@@ -1,0 +1,110 @@
+.ChattingRoom {
+    width: 600px;
+    height: 627px;
+
+    background: #F4F4F7;
+    border-radius: 10px;
+
+    flex: none;
+    align-items: center;
+    order: 0;
+    flex-grow: 0;
+}
+
+.chatting-componant {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    position: absolute;
+    width: 815px;
+    height: 627px;
+    left: 180px;
+    top: 78px;
+}
+
+.menu-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+
+    color: #333333;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+
+    width: 175px;
+    height: 28px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.chatting-textbox {
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 10px;
+
+    position: absolute;
+    width: 560px;
+    height: 50px;
+    left: calc(50% - 770px/2);
+    bottom: 15px;
+
+    background: #FFFFFF;
+
+    border: 2px solid #ECECF3;
+    border-radius: 10px;
+}
+
+.input-text {
+    width: 100%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    color: #333333;
+}
+
+
+.input-button {
+    width: 24px;
+    height: 24px;
+}
+
+.chatting-room {
+    overflow: scroll;
+    padding: 30px;
+    width: 90%;
+    height: 90%;
+}
+
+.footer {
+    height: 30px;
+    width: 100%;
+    left: 1px;
+    right: 0px;
+    bottom: 0px;
+}
