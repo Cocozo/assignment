@@ -50,3 +50,14 @@
   order: 1;
   flex-grow: 0;
 }
+
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./font/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./font/Montserrat-Regular.ttf");
+}
