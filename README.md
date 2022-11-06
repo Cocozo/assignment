@@ -8,6 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 터미널에서 해당 레포지토리를 연 뒤, `npm start` 를 입렵하시면 로컬 호스트서버가 열리고, 브라우저에서 [http://localhost:3000](http://localhost:3000)를 입력하시면 제작한 프로젝트를 보실 수 있습니다.
 
 ## 실행화면
+**(모두 폰트 적용전 화면으로 설명되어 나옵니다!)**  
 기본 실행 화면
  ![image](./readme_files/basic_screen.png)
 
