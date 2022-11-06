@@ -8,7 +8,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 터미널에서 해당 레포지토리를 연 뒤, `npm start` 를 입력하시면 로컬 호스트서버가 열리고, 브라우저에서 [http://localhost:3000](http://localhost:3000)를 여시면 제작한 프로젝트를 보실 수 있습니다.
 
 ## 실행화면
-**(모두 폰트 적용전 화면으로 설명되어 나옵니다!)**  
 기본 실행 화면
  ![image](./readme_files/basic_screen.png)
 
@@ -29,6 +28,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 ## 추가 기능 구현
+**(모두 폰트 적용전 화면으로 설명되어 나옵니다!)**    
 기본적으로 ui부분에 있어서는 건드린 부분이 많이 없습니다. 과제에서 요구했던 기능을 모두 구현하였고, 메신저 창을 구현할때, 메신저 창에서 할수있는 행동과 채팅 버블을 약간 수정했습니다.
 
 ### 추가기능1 : 채팅 입력시 엔터버튼을 누르면 입력한 채팅 전송
