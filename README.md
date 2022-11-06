@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# 커먼컴퓨터 프론트엔드 면접과제 - 20181593 김재하
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## 실행법
 
-In the project directory, you can run:
+기본적으로 create-react-app를 사용하여 프로젝트를 구성하였습니다. 따라서
+터미널에서 해당 레포지토리를 연 뒤, `npm start` 를 입렵하시면 로컬 호스트서버가 열리고, 브라우저에서 [http://localhost:3000](http://localhost:3000)를 입력하시면 제작한 프로젝트를 보실 수 있습니다.
 
-### `npm start`
+## 실행화면
+기본 실행 화면
+ ![image](./readme_files/basic_screen.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+기본 대화 화면
+ ![image](./readme_files/basic_conversation.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+'clear convasation' 클릭시
+ ![image](./readme_files/basic_conversation.png)
 
-### `npm test`
+ 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 기능 구현
+기본적으로 ui부분에 있어서는 건드린 부분이 많이 없습니다. 과제에서 요구했던 기능을 모두 구현하였고, 메신저 창을 구현할때, 메신저 창에서 할수있는 행동과 채팅 버블을 약간 수정했습니다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 추가기능1 : 채팅 입력시 엔터버튼을 누르면 입력한 채팅 전송
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ ![image](./readme_files/enter_key.gif)
 
-### `npm run eject`
+ 기능을 구현하며 전송버튼을 일일이 누르며 수정을 하다보니 마우스를 이동하는 동작에서 시간이 오래 걸려 여타 다른 메신저 앱처럼 엔터키를 누를시 이벤트를 작성하여 똑같이 전송을 할 수 있는 기능을을 만들었습니다.
+ 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 추가기능2 : 로봇 채팅 버블 수정
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ ![image](./readme_files/robot_bubble.gif)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+ 모든 로봇 채팅에 프로필 사진과 이름을 다니까 메세지 창이 전반적으로 깔끔해 보이지 않고 어수선하여 메세지의 내용을 보는데 방해가 되었습니다. 따라서 만약 로봇에서 연속적으로 메세지가 오는경우에, 로봇프로필과 이름은 상위 메세지 버블에다가만 노출될 수 있도록 구현했습니다.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 추가기능3 : 메신저 저를 받았을시 스크롤 맨 아래로 내리기.
 
-## Learn More
+ ![image](./readme_files/scroll_down.gif)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ 메세지를 전송 받거나, 자신이 메세지를 보낼때 만약 메세지 버블들이 많아 스크롤이 생길때 사진이 보낸 메세지가 채팅 입력 화면 아래로 버블이 생겨 확인하는데 불편함이 생깁니다. 따라서 버블이 추가될때마다 스크롤를 맨 아래로 내려 업데이트된 메세지를 한눈에 확인 할 수 있도록 도와줍니다.
