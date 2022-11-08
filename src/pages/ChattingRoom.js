@@ -25,7 +25,7 @@ function ChattingRoom(props) {
 
   useEffect(() => {
     scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
-  });
+  }, [value]);
   
   return (
     <div className="ChattingRoom">
